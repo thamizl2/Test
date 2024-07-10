@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'thamizh_agent'
+    }
+
+  }
   stages {
     stage('Devlopment') {
       steps {
